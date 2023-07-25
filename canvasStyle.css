@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  background: black;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background: black;
+  z-index: 2;
+}
+
+.logo {
+  padding-left: 40px;
+  cursor: pointer;
+}
+
+.header_menu {
+  display: flex;
+  gap: 20px;
+  padding-right: 40px;
+}
+
+.menu {
+  display: flex;
+  gap: 5px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.menu_point {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 12px 32px;
+  border-radius: 20px;
+  color: white;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.menu_point:focus {
+  background: white;
+  color: black;
+}
+
+.menu_button {
+  padding: 12px 32px;
+  border-radius: 20px;
+  border: none;
+  background: #80CE6C;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.mainPage {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin-top: 160px;
+  background: black;
+}
+
+.canvas {
+  width: 75%;
+  position: relative;
+  margin-block: 30px;
+}
+
+#mainCanvas {
+  width: 100%;
+  position: absolute;
+}
+
+#electron {
+  width: 100%;
+  position: absolute;
+}
+
+.robot {
+  position: absolute;
+  width: 75%;
+  z-index: 1;
+}
+
+.theme {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width: 520px;
+  margin: 110px 40px 110px;
+  z-index: 1;
+}
+
+.theme_title {
+  width: 100%;
+}
+
+.title_text {
+  margin-right: 20px;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.white {
+  color: white;
+}
+
+.green {
+  color: #80CE6C;
+}
+
+.purple {
+  color: #9317BC;
+}
+
+.theme_text {
+  color: white;
+}
+
+.theme_buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.theme_button {
+  padding: 16px 48px;
+  width: max-content;
+  border: none;
+  border-radius: 40px;
+  text-transform: uppercase;
+  color: white;
+  background: #9317BC;
+  cursor: pointer;
+}
+
+.callBack_button {
+  align-self: flex-end;
+  position: relative;
+  width: 123px;
+  height: 123px;
+  border-radius: 50%;
+  border: grey solid 10px;
+  background: #80CE6C;
+  font-size: 24px;
+  text-transform: uppercase;
+}
