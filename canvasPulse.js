@@ -21,7 +21,6 @@ const pulse = {
     // contextEl.shadowColor="pink"
     // contextEl.shadowBlur=115;
     contextEl.closePath();
-    console.log(this.opacity)
   },
   clear: function () {
     contextEl.clearRect(this.x - data.radius / 2, this.y - data.radius / 2, data.radius, data.radius);
@@ -86,7 +85,7 @@ const start = (score, ar) => {
       pulse.x = array[step+value][0];
       pulse.y = array[step+value][1];
       pulse.clear();
-      pulse.opacity = Math.abs(data.opacity*index);
+      pulse.opacity = data.opacity*index;
     }
     pulse.x = array[step + value][0];
     pulse.y = array[step + value][1];
@@ -94,7 +93,6 @@ const start = (score, ar) => {
   })
   step++
 };
-
 
 const go = () => {
   data = dataImpulse();
