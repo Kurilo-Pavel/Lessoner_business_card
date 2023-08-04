@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>Canvas</title>
   <link rel="stylesheet" href="./canvasStyle.css" type="text/css">
+  <script type="module" src="script.js"></script>
+  <script type="module" src="canvasPulse.js"></script>
+  <script type="module" src="canvasScheme.js"></script>
+  <script type="module" src="canvasRobot.js"></script>
 </head>
 <body>
 <header class="header">
@@ -23,7 +27,8 @@
   <div class="canvas">
     <canvas id="mainCanvas" style=""></canvas>
     <canvas id="electron" style=""></canvas>
-    <img src="./icons/Robot.svg" alt="Robot" class="robot">
+    <canvas id="robot" style=""></canvas>
+    <!--    <img src="./icons/Robot.svg" alt="Robot" class="robot">-->
   </div>
   <div class="theme">
     <h1 class="theme_title">
@@ -33,12 +38,34 @@
       <span class="title_text purple">приложений</span>
     </h1>
     <p class="theme_text">Создаем резонирующие сайты и приложения, делающие ваш бренд действительно awesome</p>
-   <div class="theme_buttons">
-    <button class="theme_button">Оставить заявку</button>
-    <button class="callBack_button">Кнопка связи</button>
-   </div>
+    <div class="theme_buttons">
+      <button class="theme_button">Оставить заявку</button>
+      <button class="callBack_button">Кнопка связи</button>
+    </div>
   </div>
 </div>
+<form class="setting">
+  <label for="score">Score min=10 max=1000
+    <input type="number" id="score" value="1000"/>
+  </label>
+  <label for="circle">Amount circle
+    <input type="number" id="circle" value="1"/>
+  </label>
+  <label for="distance">Distance
+    <input type="number" id="distance" value="15"/>
+  </label>
+  <label for="tail">Tail
+    <input type="checkbox" id="tail">
+  </label>
+  <label for="opacity">Opacity
+    <input type="number" id="opacity" value="1"/>
+  </label>
+  <label for="radius">Radius
+    <input type="number" id="radius" value="20"/>
+  </label>
+
+  <button type="button" id="save">Save</button>
+  <button type="button" id="send">Start</button>
+</form>
 </body>
-<script src="script.js"></script>
 </html>
