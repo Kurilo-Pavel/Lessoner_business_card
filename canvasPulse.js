@@ -81,6 +81,7 @@ const start = (score, ar) => {
     pulse.x = array[step][0];
     pulse.y = array[step][1];
     pulse.clear();
+    pulse.opacity=data.opacity;
     if (data.tail) {
       pulse.x = array[step+value][0];
       pulse.y = array[step+value][1];
@@ -97,7 +98,6 @@ const start = (score, ar) => {
 
 const go = () => {
   data = dataImpulse();
-  pulse.opacity=data.opacity;
   contextEl.clearRect(0, 0, electron.width, electron.height);
   clearInterval(startInterval);
   arrayPulse.map(arr => {
